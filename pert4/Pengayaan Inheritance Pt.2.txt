@@ -1,0 +1,30 @@
+[PERTANYAAN PENGAYAAN]
+
+1. Mengapa constructor di class Member wajib memanggil constructor Customer menggunakan super(...)?
+
+2. Apa tujuan memanggil super.tampilkanInfo() saat melakukan overriding method di subclass?
+
+3. Berikan contoh kondisi di mana pemanggilan super.method() sangat penting dalam pewarisan.
+
+4. Bagaimana keyword super membantu membedakan atribut yang memiliki nama sama antara parent dan child?
+
+5. Mengapa pendekatan inheritance lebih efisien dibanding menyalin ulang seluruh atribut dan method ke dalam class Member?
+
+Jawab:
+1. Constructor di class Member wajib memanggil constructor Customer menggunakan super(...) untuk memastikan bahwa atribut-atribut yang diwarisi dari class Customer diinisialisasi dengan benar.
+    Ini penting karena class Member adalah subclass dari Customer, dan tanpa memanggil constructor parent, atribut-atribut tersebut mungkin tidak akan memiliki nilai yang sesuai.
+
+2. Tujuan memanggil super.tampilkanInfo() saat melakukan overriding method di subclass adalah untuk memanfaatkan implementasi yang sudah ada di parent class.
+    Dengan memanggil method dari parent, kita dapat menghindari duplikasi kode dan memastikan bahwa informasi dasar yang sudah didefinisikan di parent class tetap ditampilkan dengan benar sebelum menambahkan informasi tambahan yang spesifik untuk subclass.
+
+3. Contoh kondisi di mana pemanggilan super.method() sangat penting dalam pewarisan adalah ketika subclass ingin memperluas fungsionalitas method dari parent class.
+    Misalnya, jika ada method calculateTotal() di parent class yang menghitung total belanja, dan subclass ingin menambahkan diskon khusus untuk member, maka subclass dapat memanggil super.calculateTotal() untuk mendapatkan total awal dan kemudian mengurangi diskon dari total tersebut.
+
+4. Keyword super membantu membedakan atribut yang memiliki nama sama antara parent dan child dengan memberikan cara eksplisit untuk mengakses atribut atau method dari parent class.
+    Misalnya, jika class Customer memiliki atribut nama dan class Member juga memiliki atribut nama, maka kita dapat menggunakan super.nama untuk mengakses atribut nama dari Customer, sementara this.nama akan merujuk ke atribut nama dari Member.
+
+5. Pendekatan inheritance lebih efisien dibanding menyalin ulang seluruh atribut dan method ke dalam class Member karena:
+    - Mengurangi duplikasi kode, sehingga memudahkan pemeliharaan dan pembaruan kode.
+    - Memungkinkan penggunaan kembali kode yang sudah ada, sehingga menghemat waktu pengembangan.
+    - Meningkatkan keterbacaan kode dengan struktur yang lebih jelas, di mana hubungan antara class parent dan child dapat dengan mudah dipahami.
+    - Memudahkan penambahan fitur baru di masa depan, karena perubahan pada parent class secara otomatis akan diterapkan pada subclass tanpa perlu

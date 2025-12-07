@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="$PROJECT_DIR$/Member.java">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/Member.java" />
+              <option name="originalContent" value="class Member extends Customer {&#10;    String nama;&#10;    String IdCustomer;&#10;    int totalBelanja;&#10;    int poinReward;&#10;    String levelMember;&#10;&#10;    public Member(String nama, String IdCustomer, int totalBelanja, int poinReward, String levelMember) {&#10;        super(nama, IdCustomer, totalBelanja);&#10;        this.poinReward = poinReward;&#10;        this.levelMember = levelMember;&#10;    }&#10;&#10;    @Override&#10;    void tampilkanInfo() {&#10;        super.tampilkanInfo();&#10;        System.out.println(&quot;Poin Reward: &quot; + this.poinReward);&#10;        System.out.println(&quot;Level Member: &quot; + this.levelMember);&#10;    }&#10;}&#10;" />
+              <option name="updatedContent" value="class Member extends Customer {&#10;    int poinReward;&#10;    String levelMember;&#10;&#10;    public Member(String nama, String IdCustomer, int totalBelanja, int poinReward, String levelMember) {&#10;        super(nama, IdCustomer, totalBelanja);&#10;        this.poinReward = poinReward;&#10;        this.levelMember = levelMember;&#10;    }&#10;&#10;    @Override&#10;    void tampilkanInfo() {&#10;        super.tampilkanInfo();&#10;        System.out.println(&quot;Poin Reward: &quot; + this.poinReward + &quot; | Level: &quot; + this.levelMember);&#10;    }&#10;}&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
