@@ -7,3 +7,26 @@ Apa yang terjadi jika kita mencoba mengubah nilai suatu konstanta setelah objek 
 Bagaimana cara mendefinisikan konstanta dalam bahasa Java?
 
 Jawaban
+1. Fungsi (Function): Method yang mengembalikan nilai (return type bukan void). Digunakan untuk menghitung dan memberikan hasil.
+   Prosedur (Procedure): Method yang mengembalikan void. Digunakan untuk melakukan aksi atau efek samping tanpa mengembalikan nilai.
+
+2. Keuntungan menggunakan konstanta:
+    Mencegah perubahan nilai yang tidak disengaja (immutability)
+    Meningkatkan keterbacaan kode
+    Menghindari "magic numbers"
+    Membantu thread-safety
+    Memudahkan maintenance dan refactoring
+
+3. Jika mencoba mengubah nilai konstanta setelah inisialisasi, akan terjadi compile-time error.
+    Contoh:
+    ```java
+    public class Contoh {
+         public static final int KONSTANTA = 10;
+
+         public void ubahKonstanta() {
+              // KONSTANTA = 20; // Ini akan menyebabkan error
+         }
+    }
+
+4. Dalam bahasa Java, konstanta didefinisikan menggunakan kata kunci `final`.
+    Contoh: public static final double PI = 3.14159;

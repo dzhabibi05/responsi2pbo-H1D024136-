@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="$PROJECT_DIR$/UjiBarang.Java">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/UjiBarang.Java" />
+              <option name="originalContent" value="class UjiBarang {&#10;    public static void main(String[] args) {&#10;        // Buat objek barang pertama gitar&#10;        &#10;        &#10;        // Atur harga gitar&#10;        &#10;        &#10;        // Tambah stok gitar&#10;        &#10;        &#10;        // Buat objek drum&#10;        &#10;        &#10;        // Tampilkan informasi kedua barang&#10;        System.out.println(&quot;=== INVENTARIS TOKO NADAKITA ===&quot;);&#10;        &#10;        &#10;    }&#10;}" />
+              <option name="updatedContent" value="class UjiBarang {&#10;    public static void main(String[] args) {&#10;        // Buat objek barang pertama gitar&#10;        BarangMusik gitar = new BarangMusik(&quot;GTR-001&quot;, &quot;Gitar Akustik Yamaha&quot;);&#10;        &#10;        // Atur harga gitar&#10;        gitar.ubahHarga(1500000.0);&#10;        &#10;        // Tambah stok gitar&#10;        gitar.tambahStok(5);&#10;        &#10;        // Buat objek drum&#10;        BarangMusik drum = new BarangMusik(&quot;DRM-001&quot;, &quot;Drum Set Pearl&quot;, 8500000.0, 3);&#10;        &#10;        // Tampilkan informasi kedua barang&#10;        System.out.println(&quot;=== INVENTARIS TOKO NADAKITA ===&quot;);&#10;        gitar.tampilInfo();&#10;        drum.tampilInfo();&#10;    }&#10;}" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

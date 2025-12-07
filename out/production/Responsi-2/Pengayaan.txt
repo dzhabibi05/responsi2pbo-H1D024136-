@@ -8,3 +8,17 @@ Setelah menyelesaikan kode, jawab pertanyaan berikut:
 5. Mengapa kita perlu menggunakan Inheritance? Apa keuntungan utamanya dibandingkan membuat dua class yang terpisah sama sekali (misal class Karyawan dan class Manajer dibuat terpisah tanpa hubungan)?
 
 Jawaban:
+1. Keyword 'extends' dalam deklarasi class Java digunakan untuk menunjukkan bahwa sebuah class adalah subclass (anak) dari class lain (superclass/induk).
+    Ini memungkinkan subclass untuk mewarisi properti dan metode dari superclass, sehingga mempromosikan penggunaan kembali kode dan hierarki kelas.
+
+2. Method Overloading adalah konsep di mana beberapa metode dalam satu class memiliki nama yang sama tetapi berbeda dalam parameter (tipe atau jumlah).
+    Sedangkan Method Overriding adalah konsep di mana subclass menyediakan implementasi spesifik dari metode yang sudah ada di superclass dengan nama dan parameter yang sama.
+
+3. Keyword 'super' di dalam constructor subclass (Manajer) digunakan untuk memanggil constructor dari superclass (Karyawan).
+    Ini memungkinkan subclass untuk menginisialisasi properti yang diwarisi dari superclass sebelum menambahkan properti atau logika tambahan yang spesifik untuk subclass.
+
+4. Jika variabel di class Karyawan diubah access modifier-nya menjadi 'private', class Manajer tidak akan dapat mengakses variabel tersebut secara langsung karena 'private' membatasi akses hanya dalam class itu sendiri.
+    Solusinya adalah dengan menggunakan getter dan setter (metode akses) di class Karyawan untuk mengakses dan memodifikasi variabel tersebut dari class Manajer.
+
+5. Kita perlu menggunakan Inheritance untuk penggunaan kembali kode, mengurangi duplikasi, dan menciptakan hierarki kelas yang lebih terstruktur.
+    Keuntungan utamanya adalah kita dapat membuat class yang lebih spesifik (subclass) berdasarkan class yang lebih umum (superclass), sehingga memudahkan pemeliharaan kode dan pengembangan fitur baru tanpa harus menulis ulang kode yang sudah ada.
