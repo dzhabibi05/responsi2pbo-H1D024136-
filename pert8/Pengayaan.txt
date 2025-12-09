@@ -6,3 +6,19 @@ Setelah anda menyelesaikan kode, tolong jawab pertanyaan dibawah ini ya =
 3. Apa perbedaan mendasar antara extends dan implements dalam konteks interface, jika dilihat secara konsep tanpa melihat contoh kode?
 4. Apa alasan diperkenalkannya default method dalam interface, dan bagaimana fitur ini memengaruhi keberlangsungan (compatibility) suatu sistem yang sudah berjalan?
 5. Bagaimana konsep multiple interface memperluas fleksibilitas desain tanpa menimbulkan masalah kompleksitas yang biasa muncul pada multiple inheritance?
+
+Jawab
+1. Interface bertujuan untuk mendefinisikan kontrak yang harus dipenuhi oleh class yang mengimplementasikannya.
+    Interface menetapkan "apa yang harus dilakukan" tanpa menentukan "bagaimana melakukannya".
+    Ini menciptakan standar perilaku yang konsisten dan memungkinkan polymorphism.
+2. Interface dapat memiliki banyak implementasi karena mereka hanya mendefinisikan metode tanpa mengikatnya pada implementasi tertentu.
+    Ini memungkinkan berbagai class untuk mengadopsi perilaku yang sama dengan cara yang berbeda, meningkatkan fleksibilitas dan memungkinkan desain sistem yang lebih modular dan dapat diperluas.
+3. Secara konsep, "extends" digunakan untuk mewarisi sifat dari sebuah class atau interface lain,
+    sedangkan "implements" digunakan oleh sebuah class untuk menyatakan bahwa ia akan menyediakan implementasi dari metode yang didefinisikan dalam interface.
+    "Extends" menunjukkan hubungan pewarisan, sementara "implements" menunjukkan komitmen untuk memenuhi kontrak yang ditetapkan oleh interface
+4. Default method diperkenalkan untuk memungkinkan penambahan metode baru ke interface tanpa memaksa semua class yang sudah mengimplementasikan interface tersebut untuk mengubah kode mereka.
+    Ini membantu menjaga kompatibilitas mundur (backward compatibility) dan memungkinkan evolusi interface tanpa mengganggu sistem yang sudah ada.
+5. Konsep multiple interface memungkinkan sebuah class untuk mengimplementasikan beberapa interface sekaligus,
+    yang memperluas fleksibilitas desain dengan memungkinkan class untuk mengadopsi berbagai perilaku.
+    Ini menghindari masalah kompleksitas yang biasanya muncul pada multiple inheritance karena interface tidak membawa state atau implementasi,
+    sehingga mengurangi risiko konflik yang sering terjadi pada pewarisan ganda.
